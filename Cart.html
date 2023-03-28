@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-    <link rel="stylesheet" href="Cart_style.css">
-</head>
-<body>
-    <header>
-        Header
-    </header>
-    <div class="container_main">
-        <!-- <div class="cart_header">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cart</title>
+        <link rel="stylesheet" href="Cart_style.css">
+    </head>
+    <script src="script.js"></script>
+    <body>
+        <div w3-include-html="header.html"></div>
+        <div class="container_main">
+            <!-- <div class="cart_header">
 
         </div> -->
-        <div class="product_detail">
-             <h3>PRODUCTS IN CART</h3>
-             <div class="general_item">
-                <div class="select">
-                    <p>Product Image</p>
+            <div class="product_detail">
+                <h3>PRODUCTS IN CART</h3>
+                <div class="general_item">
+                    <div class="select">
+                        <p>Product Image</p>
+                    </div>
+                    <div class="p_img">
+                        <p>Product details</p>
+                    </div>
+                    <div class="q_selection">
+                        <button type="button">+</button>
+                        <p class="p1"> </p>
+                        <button type="button">-</button>
+
+                    </div>
                 </div>
-                <div class="p_img">
-                    <p>Product details</p>
-                </div>
-                <div class="q_selection">
-                    <button type="button">+</button>
-                    <p class="p1">     </p>
-                    <button type="button">-</button>
-                    
-                </div>
-             </div>
-             <!-- <div class="Product">
+                <!-- <div class="Product">
                 
                <input type="checkbox">  
                <div></div>
@@ -39,16 +38,18 @@
                </p>
            
              </div> -->
-        </div>
-       
-        <div class="pay_section">
-            <div> <h3>Product Summary</h3></div>
-            <div><input type="text" name="" id=""><button>apply</button></div>
-            <div><h4>Total Price</h4></div>
-            <div><button>Proceed To Checkout</button></div>
+            </div>
 
+            <div class="pay_section">
+                <div> <h3>Product Summary</h3></div>
+                <div><input type="text" name="" id=""><button>apply</button></div>
+                <div><h4>Total Price</h4></div>
+                <div><button>Proceed To Checkout</button></div>
+
+            </div>
         </div>
-    </div>
-    <footer>Footer</footer>
-</body>
+        <div w3-include-html="footer.html"></div>
+
+        <script>includeHTML()</script>
+    </body>
 </html>

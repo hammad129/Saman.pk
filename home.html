@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel = "stylesheet"  href="home.css"> 
-
-
-</head>
-<body>
-    <div>       <!--parent div--> 
-        <div class="navbar"> Navbar</div>
-        <div class="banner"> 
-            <marquee>BANNER</marquee></div>
-        <div class=" hotdeals">
-            <h3 style="text-align: center;">Hot deals</h3>
-            <div class="box ">
-                <div class="subbox">box1</div>
-                <div class="subbox">box2</div>
-                <div class="subbox">box3</div>
-                <div class="subbox">box4</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <script src="script.js"></script>
+    <body>
+        <div w3-include-html="header.html"></div>
+        <div> <!--parent div-->
+            <div class="banner">
+                <marquee>BANNER</marquee></div>
+            <div class=" hotdeals">
+                <h3 style="text-align: center;">Hot deals</h3>
+                <div class="box ">
+                    <div class="subbox">box1</div>
+                    <div class="subbox">box2</div>
+                    <div class="subbox">box3</div>
+                    <div class="subbox">box4</div>
+                </div>
+            </div>
+            <div class=" hotdeals">
+                <h3 style="text-align: center;">Featured Products</h3>
+                <div class="box ">
+                    <div class="subbox">box1</div>
+                    <div class="subbox">box2</div>
+                    <div class="subbox">box3</div>
+                    <div class="subbox">box4</div>
+                </div>
             </div>
         </div>
-        <div class=" hotdeals">
-            <h3 style="text-align: center;">Featured Products</h3>
-            <div class="box ">
-                <div class="subbox">box1</div>
-                <div class="subbox">box2</div>
-                <div class="subbox">box3</div>
-                <div class="subbox">box4</div>
-            </div>
-        </div>
-        <div class="navbar">Footer</div>
-    </div>
-</body>
+        <div w3-include-html="footer.html"></div>
+
+        <script>includeHTML()</script>
+    </body>
 </html>
