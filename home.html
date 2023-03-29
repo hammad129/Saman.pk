@@ -6,29 +6,103 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="style.css">
+        <style>
+            .banner{
+                    height: 350px;
+                    width: 100%;
+                    display: flex;
+                    font-size: 30px;
+                    padding-top: 10px ;
+
+            }
+            .banner img
+            {
+                height: 300px;
+                width: 50%;
+            }
+
+                        
+            .hotdeals{
+                height: 500px;
+                border: 2px solid #111;
+                
+                align-items: center;
+                justify-content: center;
+                font-size: 30px;
+            }
+            .box{
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+            }
+            .box1{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .subbox{
+
+                border: 2px solid #111;
+                margin-left: 20px;
+                margin-right: 30px;
+                height: 250px;
+                width: 250px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow:10px 10px 5px  rgb(139, 130, 130);
+                padding: 5px;
+
+            }
+            .subbox img{
+                
+                padding: 10px;
+                
+                height:160px ;
+                width: 230px ;
+            }
+            .subbox p{
+                font-size:large;
+            }
+
+
+
+        </style>
     </head>
     <script src="script.js"></script>
     <body>
         <div w3-include-html="header.html"></div>
         <div> <!--parent div-->
             <div class="banner">
-                <marquee>BANNER</marquee></div>
+                <marquee>
+                    <img src="/Saman.pk/home_images/pngwing.com.png" alt="" > 
+                    <img src="/Saman.pk/home_images/pngwing.com (1).png" alt="" width="30%" >
+                    <img src="/Saman.pk/home_images/a.png" alt="" >
+                    <img src="/Saman.pk/home_images/b.png" alt="" >
+                    
+                
+                </marquee>
+            </div>
             <div class=" hotdeals">
                 <h3 style="text-align: center;">Hot deals</h3>
                 <div class="box ">
-                    <div class="subbox">box1</div>
-                    <div class="subbox">box2</div>
-                    <div class="subbox">box3</div>
-                    <div class="subbox">box4</div>
+                    <div class="subbox"><img src="/Saman.pk/home_images/hotdeals1.png" alt=""> <p>Nike Shoes</p></div>
+                    <div class="subbox"><img src="/Saman.pk/home_images/hotdeals2.png" alt=""><p>Hayabusa Bike</p></div>
+                    <div class="subbox"><img src="/Saman.pk/home_images/data_str.png" alt=""><p>Algorithms </p></div>
+                    <div class="subbox"><img src="/Saman.pk/home_images/hotdeals4.png" alt=""><p>Gold Platted Ear Rings</p></div>
                 </div>
             </div>
             <div class=" hotdeals">
                 <h3 style="text-align: center;">Featured Products</h3>
                 <div class="box ">
-                    <div class="subbox">box1</div>
-                    <div class="subbox">box2</div>
-                    <div class="subbox">box3</div>
-                    <div class="subbox">box4</div>
+                    <div class="subbox"><img src="/Saman.pk/home_images/pngwing.com.png" alt=""><p>Corolla Altis</p></div>
+                    <div class="subbox"><img src="/Saman.pk/home_images/pngwing.com (1).png" alt=""><p>Wire airbuds 425</p></div>
+                    <div class="subbox"><img src="/Saman.pk/home_images/a.png" alt=""><p>Sofa Set</p></div>
+                    <div class="subbox"><img src="/Saman.pk/home_images/b.png" alt=""><p>Fashion Wear</p></div>
                 </div>
             </div>
         </div>
