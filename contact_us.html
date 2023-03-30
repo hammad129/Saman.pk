@@ -11,14 +11,35 @@
     <body>
         <div w3-include-html="header.html"></div>
 
-        <main id="container">
+        <main id="main-container">
             <div class="head">
-                <h1>Contact Us</h1>
-            </div>
-            <div class="contact">
-                <div class="contact_method">By Phone</div>
+                <div class="head_text">
+                    <h1>Contact Us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Distinctio iusto nam maiores quasi, doloremque odio ex
+                        autem blanditiis fuga, iste ullam provident eaque
+                        eligendi ea soluta mollitia sed laudantium labore!</p>
+                </div>
+
+                <div class="contact">
+                    <!-- <div class="contact_method">By Phone</div>
                 <div class="contact_method">By WhatsApp</div>
-                <div class="contact_method">Start a New Case</div>
+                <div class="contact_method">Start a New Case</div> -->
+                    <form class="contact_form">
+                        <label>Enter Your Email</label>
+                        <input type="text" placeholder="abc@gmail.com"
+                            name="email" class="input">
+                        <label>Subject</label>
+                        <input type="text" placeholder="Subject"
+                            name="subject" class="input">
+                        <label>How can we help?</label>
+                        <textarea name="description" name="description"
+                            placeholder="Write Your Problem" class="textarea"
+                            cols="50"></textarea>
+
+                        <button class="btn">Send</button>
+                    </form>
+                </div>
             </div>
         </main>
 
