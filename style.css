@@ -266,19 +266,6 @@ h2 {
     margin: 10px 0;
 }
 
-.contact_method {
-    height: 320px;
-    width: 270px;
-    border: 2px solid #111;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 40px;
-    font-size: 30px;
-    font-weight: bold;
-}
-
 .sidebar {
     min-height: 100vh;
     border: 2px solid #111;
@@ -388,7 +375,7 @@ footer {
 
 
 /* PRODUCT CSS */
-.navbar {
+/* .navbar {
     height: 70px;
     border: 2px solid #111;
     display: flex;
@@ -435,7 +422,7 @@ footer {
 
 }
 
-/* Home */
+ Home Styling
 
 
 .banner {
@@ -447,7 +434,7 @@ footer {
     font-size: 30px;
 
 
-}
+} */
 
 /* carts */
 
