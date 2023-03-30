@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="cart_style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+<script src="script.js"></script>
 <body>
+    <div w3-include-html="header.html"></div>
     <div class="Heading">
        <h1>
         Welcome to Your Shopping Basket
@@ -47,6 +50,9 @@
             <div><Button>Proceed To Checkout</Button></div>
         </div>
     </div>
+    <div class="Heading2">
+        <h2>You Might Also Like</h2>
+    </div>
     <div class="container2">
         <div><img src="/img/tees.jpg" alt="sdf">
             <span><strong>Outfitter</strong><br><small>Tee</small> </span>
@@ -73,6 +79,7 @@
             <button>Add to Cart</button>
         </div>
     </div>
-    
+    <div w3-include-html="footer.html"></div>
+    <script>includeHTML()</script>
 </body>
 </html>
