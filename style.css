@@ -50,15 +50,15 @@ body {
 }
 
 .header_nav .container ul li a:hover {
-    border-bottom: 1px solid red;
+    border-bottom: 2px solid green;
 }
 
 #main-container {
-    min-height: 110%;
+    min-height: 120%;
 }
 
 main {
-    overflow: auto;
+    overflow: hidden;
 }
 
 .description {
