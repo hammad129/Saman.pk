@@ -5,11 +5,13 @@
     display: flex;
     justify-content: center;
 }
-.sub-productContainer{
+.productContainer .sub-productContainer{
     width: 80%;
     height: 100%;
-    border: 2px solid #111;
-    box-shadow:10px 10px 5px  rgb(139, 130, 130);
+   /* border: 2px solid #111;
+    box-shadow:10px 10px 5px  rgb(139, 130, 130);*/
+    border-radius:1%;
+    box-shadow: 0 6px 20px 0 gray, 0 6px 20px 0 gray;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -71,8 +73,10 @@
 .Reviews .productComments{
     width: 80%;
     padding: 10px;
-    border: 2px solid #111;
-    box-shadow: 10px 10px 5px  rgb(139, 130, 130);
+    /*border: 2px solid #111;
+    box-shadow: 10px 10px 5px  rgb(139, 130, 130);*/
+    border-radius: 1%;
+    box-shadow: 0 6px 20px 0 gray;
     display: flex;
     flex-direction:column;
     align-items: center;
