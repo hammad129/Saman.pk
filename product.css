@@ -1,0 +1,29 @@
+.product_categories_container{
+    border: 2px solid #111;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.categories_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.category_box{
+
+    /* border: 2px solid #111; */
+    padding: 20px; 
+    height: 200px;
+    width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    text-align: center;
+    color: #111;
+    font-size: 22px;
+    box-shadow: 0 6px 20px 0 gray, 0 6px 20px 0 gray;
+
+} 
