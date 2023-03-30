@@ -8,13 +8,13 @@
     justify-content: center;
     align-items: center;
 }
-.container{
+.cart_container{
     width: auto;
     height: fit-content; 
     display: flex;
     flex-direction: row;
 }
-.container div{
+.cart_container div{
     margin: 3px;
 }
 .section1{
