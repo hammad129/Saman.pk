@@ -349,7 +349,9 @@ footer {
 /* Home */
 
 
+
 .banner {
+
     height: 400px;
     border: 2px solid #111;
     display: flex;
@@ -359,6 +361,7 @@ footer {
 
 
 }
+
 
 /* carts */
 
