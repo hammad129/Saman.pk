@@ -84,6 +84,7 @@ body {
 .btn:focus,
 .input:focus {
     outline: none;
+    border-bottom: 2px solid green;
 }
 
 #main-container {
