@@ -1,4 +1,3 @@
-
 * {
     text-decoration: none;
 }
@@ -18,7 +17,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    height: 60px;
+    height: 75px;
 }
 
 .header_nav {
@@ -46,19 +45,53 @@ body {
 
 .header_nav a {
     color: #fff;
-    padding: 7px 15px;
+    padding: 7px 10px;
 }
 
 .header_nav .container ul li a:hover {
-    border-bottom: 1px solid red;
+    border-bottom: 2px solid steelblue;
+}
+
+.search {
+    position: relative;
+}
+
+.search .input {
+    background-color: #fff;
+    border: 0;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 25px;
+}
+
+.search .input::placeholder {
+    color: #111;
+}
+
+.search .btn {
+    background-color: #fff;
+    color: #111;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 9px 10px;
+    right: 0.4px;
+    bottom: 0.0001px;
+    border-radius: 50%;
+    position: absolute;
+    border: 0;
+}
+
+.btn:focus,
+.input:focus {
+    outline: none;
 }
 
 #main-container {
-    min-height: 110%;
+    min-height: 120%;
 }
 
 main {
-    overflow: auto;
+    overflow: hidden;
 }
 
 .description {
@@ -129,7 +162,7 @@ h2 {
     position: absolute;
     width: 100%;
     height: 450px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .policy .image {
@@ -179,7 +212,7 @@ h2 {
     position: absolute;
     width: 100%;
     height: 350px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .head .head_text {
@@ -198,6 +231,7 @@ h2 {
 .contact {
     position: absolute;
     background-color: #fff;
+    border-radius: 17px;
     display: flex;
     top: 80%;
     height: 420px;
