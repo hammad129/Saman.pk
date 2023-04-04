@@ -92,7 +92,7 @@
     border: 1px solid gray;
     float:left;
 }
-button{
+.single_product_button{
     width: 100px;
     height: 40px;
     text-align: center;
@@ -103,6 +103,6 @@ button{
     border-radius: 8px;
     cursor: pointer;
 }
-button:hover{
+.single_product_button:hover{
     background-color: rgb(62, 190, 62);
 }
