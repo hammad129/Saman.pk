@@ -14,22 +14,43 @@
         
     </head>
     <script src="script.js"></script>
+    <script src="SinglProduct.js">let slideIndex = 1;showSlides(slideIndex);</script>
     <body>
         <div w3-include-html="header.html"></div>
-        <div class="productContainer" style="margin-top: 30px; margin-bottom:30px;">
+        <div class="productContainer">
             <div class="sub-productContainer" >
                 <div class="productImage">
-                <div class="mainImage">
-                    <img 
-                    src="./imgSinglProduct/43-434027_product-beauty-skin-care.png" 
-                    alt="Product Image">
-                </div>
-                <div class="otherImages">
-                    <p>Other images</p>
-                </div>
+                
+                    <div class="mySlides mainImage">
+                        <img src="imgSinglProduct/43-434027_product-beauty-skin-care.png" style="width:100%">
+                      </div>
+                    
+                      <div class="mySlides mainImage">
+                        <img src="imgSinglProduct/blank-template-of-beauty-product.webp" style="width:100%">
+                      </div>
+                    
+                      <div class="mySlides mainImage">
+                        <img src="imgSinglProduct/closeup.jpg" style="width:100%">
+                      </div>
+                        
+                      <a class="prev" onclick="plusSlides(-1)">❮</a>
+                      <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                      <div class="otherImages">
+                        <div class="column">
+                          <img class="demo cursor" src="imgSinglProduct/43-434027_product-beauty-skin-care.png" style="width:100%; height: 70%;" onclick="currentSlide(1)">
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="imgSinglProduct/blank-template-of-beauty-product.webp" style="width:100%; height: 70%;" onclick="currentSlide(2)" >
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="imgSinglProduct/closeup.jpg" style="width:100%; height: 70%;" onclick="currentSlide(3)">
+                      </div>
+                    </div>
+                
                 </div>
                 <div class="productDetail">
-                <div style="height: 80%; width: 80%; overflow: hidden;">
+                <div style="height: 70%; width: 80%; overflow: hidden; margin-bottom: 10px;">
                     <h3>Product Name</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         Cupiditate ut mollitia, tempora architecto beatae
@@ -37,7 +58,7 @@
                         accusantium aliquid officiis! Sequi exercitationem
                         voluptatibus, in illum quidem earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quos possimus ut quibusdam et non eaque sint sequi sapiente fugit impedit repellat, eos aliquam architecto delectus soluta hic voluptates vero.</p>
                 </div>
-                <button onclick="location.href='cart.html'">Add to Cart</button>
+                <button class="single_product_button"  onclick="location.href='cart.html'">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -77,5 +98,6 @@
         <div w3-include-html="footer.html"></div>
 
         <script>includeHTML()</script>
+        <script>showSlides(slideIndex);</script>
     </body>
 </html>
