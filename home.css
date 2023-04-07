@@ -1,80 +1,63 @@
-
+*{
+    margin: 0%;
+}
 .banner{
-    height: 350px;
-    width: 100%;
+    border: 2px solid black;
+    height: 500px;
+}
+
+.hot_deals{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+.hot_deals h1{
+    font-family: "Gill Sans", sans-serif;
+    margin-bottom: 25px;
+}
+
+.hot_deals_container{
+    border: 2px solid black;
     display: flex;
-    font-size: 30px;
-    padding-top: 10px ;
-    
-
-}
-.banner img
-{
-height: 600px;
-width: 50%;
+    width: 1280px;
+    gap: 25px;
+    align-items: center;
+    justify-items: center;
 }
 
-        
-.hotdeals{
-
-/* border: 2px solid #111; */
-padding: 50px;
-align-items: center;
-justify-content: center;
-font-size: 30px;
-}
 .box{
-display: flex;
-gap: 20px;
-align-items: center;
-justify-content: center;
-}
-.box1{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-wrap: wrap;
-gap: 10px;
+    border: 2px solid black;
+    width: 300px;
+    height: 400px;
 }
 
-.subbox{
-
-/* border: 2px solid #111; */
-background-color: white;
-/* height: 431px; */
-width: 379px;
-border-radius: 10px;
-/* text-align: center; */
-/* box-shadow: 0 6px 20px 0 gray, 0 6px 20px 0 gray; */
-
+.banner_container{
+    background-color: wheat;
 }
- .subbox img{
-    display: flex;
+
+.bannerbox1{
+    flex-basis: 50%;
+    padding: 20px;
+    /* background-color: blue; */
     justify-content: center;
     align-items: center;
-    margin: auto;
-}
-/* .subbox p{
-font-size:large;
-} */
-
-.subbox button{
-    background-color: white;
-    padding: 10px; 
-    border-radius: 25px; 
-    font-size: 17px; 
-    margin: 10px;
-}
-
-.ratings
-{
     display: flex;
-    padding-left: 10px;
-    gap: 2px;
 }
 
-.ratings img{
-    margin: 0%;
-    width: 20px;
-    height: 20px;
+.bannerbox2{
+    flex-basis: 50%;
+    padding: 20px;
+    /* background-color: red; */
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}
+
+.cardimage{
+    background-color: wheat;
 }

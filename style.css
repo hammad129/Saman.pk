@@ -94,6 +94,16 @@ main {
     overflow: hidden;
 }
 
+.carousel-inner {
+    width: 100%;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  
+  .carousel-inner .item a img {
+    height: 500px !important;
+  }
+
 .description {
     display: flex;
     background-image: url('https://images.anandtech.com/doci/16489/XboxSeriesXGlossary_HERO%20(1)2_waifu2x_photo_noise2_scale_tta_1_678x452.jpg');

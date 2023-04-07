@@ -1,0 +1,45 @@
+.banner_container{
+    background-color: wheat;
+}
+
+.bannerbox1{
+    flex-basis: 50%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bannerbox2{
+    flex-basis: 50%;
+    padding: 20px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}
+
+.bannerbox1 div h1{
+    font-size: 55px;
+    font-weight: 750;
+}
+
+.bannerbox1 div h2{
+    font-size: 50px;
+    font-weight: 750;
+}
+
+.mission_box{
+    background-color: wheat;
+    /* border: 2px solid black; */
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission_box p {
+    margin: 0%;
+}

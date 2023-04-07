@@ -1,93 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Products</title>
-        <link rel="stylesheet" href="product.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <script src="script.js"></script>
-    <body>
-        <div w3-include-html="header.html"></div>
-        <div>
-            <div class="product_categories_container">
-                <h1 style="text-align: center; margin: 0%; padding-bottom: 30px; font-family: Arial, Helvetica, sans-serif;">Product Categories</h1>
-                
-                    <div class="categories_container">
-                        <a href="SinglProduct.html">
-                            <div class="category_box" style="background-image: url('./product_category_images/groceries.jpg'); background-repeat: no-repeat;">
-                            <!-- <img src="/product_category_images/grocery.png" alt="image" width="200px" height="150px"> -->
-                                <p style="margin:0%; margin-top: 10px; position: relative;">Groceries</p>
-                        </div>
-                        </a>
-                        <a href="SinglProduct.html">
-                            <div class="category_box" style="background-image: url('./product_category_images/menfashion.jpg'); background-repeat: no-repeat;">
-                            <!-- <img src="/product_category_images/men.png" alt="image" width="180px" height="150px"> -->
-                               <p style="margin: 0%; margin-top: 10px; position: relative;">Men's Fashion</p>
-                        </div>
-                        </a>
-                        <a href="SinglProduct.html">
-                        <div class="category_box" style="background-image: url('./product_category_images/womenfashion.jpg'); background-repeat: no-repeat;">
-                        <!-- <img src="/product_category_images/women.png"  alt="image" width="100px" height="150px"> -->
-                           <p style="margin: 0%; margin-top: 10px; position: relative;">Women's Fashion</p>
-                        </div>
-                        </a>
-                        <a href="SinglProduct.html">
-                        <div class="category_box" style="background-image: url('./product_category_images/kidsfashion.jpg'); background-repeat: no-repeat;">
-                        <!-- <img src="/product_category_images/kids.png"  alt="image" width="200px" height="150px"> -->
-                          <p style="margin: 0%; margin-top: 10px; position: relative;">Kid's Fashion</p>
-                        </div>
-                        </a>
-                        <a href="SinglProduct.html">
-                        <div class="category_box" style="background-image: url('./product_category_images/health.jpg'); background-repeat: no-repeat;">
-                        <!-- <img src="/product_category_images/health products.png"  alt="image" width="220px" height="150px"> -->
-                           <p style="margin: 0%; margin-top: 10px; position: relative;">Health and Beauty</p>
-                        </div>
-                        </a>
-                        <a href="SinglProduct.html">
-                        <div class="category_box" style="background-image: url('./product_category_images/electronics.jpg'); background-repeat: no-repeat;">
-                        <!-- <img src="/product_category_images/electronic devices.png"  alt="image" width="230px" height="150px"> -->
-                          <p style="margin: 0%; margin-top: 10px; position: relative;">Electronic Devices</p>
-                        </div>
-                        </a>
-                        <a href="SinglProduct.html">
-                        <div class="category_box" style="background-image: url('./product_category_images/electronic_accessories.jpg'); background-repeat: no-repeat;">
-                        <!-- <img src="/product_category_images/electronic accessories.png"  alt="image" width="240px" height="150px"> -->
-                           <p style="margin: 0%; margin-top: 10px;position: relative;">Electronic Accessories</p>
-                        </div>
-                        </a>
-                        <a href="SinglProduct.html">
-                        <div class="category_box" style="background-image: url('./product_category_images/appliances.jpg'); background-repeat: no-repeat;">
-                            <!-- <img src="/product_category_images/home appliances.png"  alt="image" width="240px" height="150px"> -->
-                              <p style="margin: 0%; margin-top: 10px; position: relative;">TV and Home Appliances</p>
-                        </div>
-                        </a>
-                        <a href="SinglProduct.html">
-                        <div class="category_box" style="background-image: url('./product_category_images/sports.jpg'); background-repeat: no-repeat;">
-                            <!-- <img src="/product_category_images/sports.png"  alt="image" width="240px" height="150px"> -->
-                                <p style="margin: 0%; margin-top: 10px; position: relative;">Sports and Outdoors</p>
-                        </div>
-                        </a>
-                        <a href="SinglProduct.html">
-                            <div class="category_box" style="background-image: url('./product_category_images/home.jpg'); background-repeat: no-repeat;">
-                                <!-- <img src="/product_category_images/home.png"  alt="image" width="240px" height="150px"> -->
-                                    <p style="margin: 0%; margin-top: 10px; position: relative;">Home and Lifestyle</p>
-                            </div>
-                            </a>
-                    </div>
-                    <!-- <div class="box1">
-                        <div class="subbox">box5</div>
-                        <div class="subbox">box6</div>
-                        <div class="subbox">box7</div>
-                        <div class="subbox">box8</div>
-                    </div> -->
-                
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="product.css">
+    <script src="https://kit.fontawesome.com/98ae1596ad.js" crossorigin="anonymous"></script>
+    <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+  <div w3-include-html="header.html"></div>
+  <!-- Brands -->
+  <div class="container px-4">
+  <div class="d-flex flex-column">
+    <div>
+      <h1 class="my-5">Brands</h1>
+      <div class="d-md-flex flex-wrap justify-content-between">
+        <div class="card mb-4" style="width:300px;">
+            <div><img class="card-img-top p-3" src="./product images/converse.png" alt="Card image cap"></div>
+          </div>
+          <div class="card mb-4" style="width:300px;">
+            <div><img class="card-img-top p-3 m-auto" src="./product images/puma.png" alt="Card image cap"></div>
+          </div>
+          <div class="card mb-4" style="width:300px;">
+            <div><img class="card-img-top p-3" src="./product images/nike.png" alt="Card image cap"></div>
+          </div>
+          <div class="card mb-4" style="width:300px;">
+            <div><img class="card-img-top p-3" src="./product images/adidas.png" alt="Card image cap"></div>
+          </div>
         </div>
-        <div w3-include-html="footer.html"></div>
-
-        <script>includeHTML()</script>
-    </body>
+  </div>
+  </div>
+  </div>
+  <!-- Mens Section -->
+  <div class="container px-4">
+  <div class="d-flex flex-column">
+    <div>
+      <h1 class="my-5">Mens Sneakers</h1>
+      <div class="d-md-flex flex-wrap justify-content-between">
+        <div class="card mb-4" style="width:300px;">
+            <div class="cardimage"><a href="SinglProduct.html"><img class="card-img-top p-3" src="./home_images/airforce1.png" alt="Card image cap"></a></div>
+            <div class="card-body">
+              <h5 class="card-title">Nike Air Force 1</h5>
+              <div class="mb-3">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+              </div>
+              <p class="card-text fs-5">$100</p>
+              <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+              <a href="#" class="btn btn-outline-dark">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4" style="width:300px;">
+            <div class="cardimage"><img class="card-img-top p-3" src="./home_images/vans.png" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Vans Old Skool</h5>
+              <div class="mb-3">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+              </div>
+              <p class="card-text fs-5">$100</p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4" style="width:300px;">
+            <div class="cardimage"><img class="card-img-top p-3" src="./home_images/nike (2).png" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Nike Huarache</h5>
+              <div class="mb-3">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+              </div>
+              <p class="card-text fs-5">$100</p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4" style="width:300px;">
+            <div class="cardimage"><img class="card-img-top p-3" src="./home_images/adidas.png" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Adidas Super Star</h5>
+              <div class="mb-3">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+              </div>
+              <p class="card-text fs-5">$100</p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  </div>
+  <button class="btn btn-lg btn-dark my-4">View More</button>
+  </div>
+  <!-- Womens Section -->
+  <div class="container px-4">
+  <div class="d-flex flex-column">
+    <div>
+      <h1 class="my-5">Womens Sneakers</h1>
+      <div class="d-md-flex flex-wrap justify-content-between">
+        <div class="card mb-4" style="width:300px;">
+            <div class="cardimage"><img class="card-img-top p-3" src="./home_images/airforce1.png" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Nike Air Force 1</h5>
+              <div class="mb-3">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+              </div>
+              <p class="card-text fs-5">$100</p>
+              <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+              <a href="#" class="btn btn-outline-dark">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4" style="width:300px;">
+            <div class="cardimage"><img class="card-img-top p-3" src="./home_images/vans.png" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Vans Old Skool</h5>
+              <div class="mb-3">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home _images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+              </div>
+              <p class="card-text fs-5">$100</p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4" style="width:300px;">
+            <div class="cardimage"><img class="card-img-top p-3" src="./home_images/nike (2).png" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Nike Huarache</h5>
+              <div class="mb-3">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+              </div>
+              <p class="card-text fs-5">$100</p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4" style="width:300px;">
+            <div class="cardimage"><img class="card-img-top p-3" src="./home_images/adidas.png" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Adidas Super Star</h5>
+              <div class="mb-3">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+              </div>
+              <p class="card-text fs-5">$100</p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  </div>
+  <button class="btn btn-lg btn-dark my-4">View More</button>
+  </div>
+  <!-- Kids Section -->
+  <div class="container px-4">
+  <div class="d-flex flex-column">
+    <div>
+      <h1 class="my-5">Kids Sneakers</h1>
+      <div class="d-md-flex flex-wrap justify-content-between">
+        <div class="card mb-4" style="width:300px;">
+            <div class="cardimage"><img class="card-img-top p-3" src="./home_images/airforce1.png" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Nike Air Force 1</h5>
+              <div class="mb-3">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">              </div>
+              <p class="card-text fs-5">$100</p>
+              <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+              <a href="#" class="btn btn-outline-dark">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4" style="width:300px;">
+            <div class="cardimage"><img class="card-img-top p-3" src="./home_images/vans.png" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Vans Old Skool</h5>
+              <div class="mb-3">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                          </div>
+              <p class="card-text fs-5">$100</p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4" style="width:300px;">
+            <div class="cardimage"><img class="card-img-top p-3" src="./home_images/nike (2).png" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Nike Huarache</h5>
+              <div class="mb-3">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+              </div>
+              <p class="card-text fs-5">$100</p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4" style="width:300px;">
+            <div class="cardimage"><img class="card-img-top p-3" src="./home_images/adidas.png" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Adidas Super Star</h5>
+              <div class="mb-3">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+              </div>
+              <p class="card-text fs-5">$100</p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  </div>
+  <button class="btn btn-lg btn-dark my-4">View More</button>
+  </div>
+  <!-- Unisex Section -->
+  <div class="container px-4">
+  <div class="d-flex flex-column">
+    <div>
+      <h1 class="my-5">Unisex Sneakers</h1>
+      <div class="d-md-flex flex-wrap justify-content-between">
+        <div class="card mb-4" style="width:300px;">
+            <div class="cardimage"><img class="card-img-top p-3" src="./home_images/airforce1.png" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Nike Air Force 1</h5>
+              <div class="mb-3">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+              </div>
+              <p class="card-text fs-5">$100</p>
+              <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+              <a href="#" class="btn btn-outline-dark">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4" style="width:300px;">
+            <div class="cardimage"><img class="card-img-top p-3" src="./home_images/vans.png" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Vans Old Skool</h5>
+              <div class="mb-3">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+              </div>
+              <p class="card-text fs-5">$100</p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4" style="width:300px;">
+            <div class="cardimage"><img class="card-img-top p-3" src="./home_images/nike (2).png" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Nike Huarache</h5>
+              <div class="mb-3">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+              </div>
+              <p class="card-text fs-5">$100</p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4" style="width:300px;">
+            <div class="cardimage"><img class="card-img-top p-3" src="./home_images/adidas.png" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Adidas Super Star</h5>
+              <div class="mb-3">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                <img src="./home_images/star.svg" alt="" width="20px" height="20px">
+                
+              </div>
+              <p class="card-text fs-5">$100</p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  </div>
+  <button class="btn btn-lg btn-dark my-4">View More</button>
+  </div>
+  <div w3-include-html="footer.html"></div>
+  <script src="script.js"></script>
+  <script>includeHTML()</script>
+</body>
 </html>
