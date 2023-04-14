@@ -70,7 +70,7 @@ body {
 
 .search .btn {
     background-color: #fff;
-    color: #111;
+    color: #111111;
     font-size: 13px;
     cursor: pointer;
     padding: 9px 10px;
@@ -84,7 +84,6 @@ body {
 .btn:focus,
 .input:focus {
     outline: none;
-    border-bottom: 2px solid green;
 }
 
 #main-container {
@@ -94,6 +93,16 @@ body {
 main {
     overflow: hidden;
 }
+
+.carousel-inner {
+    width: 100%;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  
+  .carousel-inner .item a img {
+    height: 500px !important;
+  }
 
 .description {
     display: flex;
